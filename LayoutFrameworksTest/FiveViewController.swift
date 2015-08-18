@@ -49,7 +49,6 @@ class FiveViewController: UIViewController {
         self.blueView.autoPinToBottomLayoutGuideOfViewController(self, withInset: 20)
         self.blueView.autoPinEdge(ALEdge.Left, toEdge: ALEdge.Right, ofView: self.greenView, withOffset: 20, relation: NSLayoutRelation.GreaterThanOrEqual)
         self.blueView.autoPinEdgeToSuperviewEdge(ALEdge.Right, withInset: 20, relation: NSLayoutRelation.GreaterThanOrEqual)
-        self.blueView.autoPinEdgeToSuperviewEdge(ALEdge.Right, withInset: 20, relation: NSLayoutRelation.GreaterThanOrEqual)
         
         UIView.autoSetPriority(750, forConstraints: { () -> Void in
             self.blueView.autoSetDimensionsToSize(CGSizeMake(100000, 100000))

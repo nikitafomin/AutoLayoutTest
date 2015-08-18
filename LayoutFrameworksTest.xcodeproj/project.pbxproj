@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		190A93CA1B7CED6100AB6AC3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A93C91B7CED6100AB6AC3 /* SecondViewController.swift */; };
+		1914405E1B821839002160A2 /* FirstSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1914405D1B821839002160A2 /* FirstSnapViewController.swift */; };
+		191440601B8230A4002160A2 /* SecondSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1914405F1B8230A4002160A2 /* SecondSnapViewController.swift */; };
 		19576F451B7E292E0008676E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19576F441B7E292E0008676E /* ThirdViewController.swift */; };
 		19576F471B7E2DE50008676E /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19576F461B7E2DE50008676E /* FourthViewController.swift */; };
 		19576F491B7E438A0008676E /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19576F481B7E438A0008676E /* FiveViewController.swift */; };
@@ -19,6 +21,8 @@
 		197066081B7A4B2200F7E7C7 /* LayoutFrameworksTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197066071B7A4B2200F7E7C7 /* LayoutFrameworksTestTests.swift */; };
 		197066161B7A4C8700F7E7C7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197066151B7A4C8700F7E7C7 /* TableViewController.swift */; };
 		197066181B7A558300F7E7C7 /* FirstCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197066171B7A558300F7E7C7 /* FirstCenterViewController.swift */; };
+		19734CA61B836757003770A6 /* ThridSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19734CA51B836757003770A6 /* ThridSnapViewController.swift */; };
+		19734CA81B8369FD003770A6 /* FourthSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19734CA71B8369FD003770A6 /* FourthSnapViewController.swift */; };
 		8BB44ED0527BB169A39D8FAF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7877BDB47E5BECFA09F969E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		190A93C91B7CED6100AB6AC3 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1914405D1B821839002160A2 /* FirstSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstSnapViewController.swift; sourceTree = "<group>"; };
+		1914405F1B8230A4002160A2 /* SecondSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSnapViewController.swift; sourceTree = "<group>"; };
 		19576F441B7E292E0008676E /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		19576F461B7E2DE50008676E /* FourthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		19576F481B7E438A0008676E /* FiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,8 @@
 		197066071B7A4B2200F7E7C7 /* LayoutFrameworksTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutFrameworksTestTests.swift; sourceTree = "<group>"; };
 		197066151B7A4C8700F7E7C7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		197066171B7A558300F7E7C7 /* FirstCenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCenterViewController.swift; sourceTree = "<group>"; };
+		19734CA51B836757003770A6 /* ThridSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThridSnapViewController.swift; sourceTree = "<group>"; };
+		19734CA71B8369FD003770A6 /* FourthSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthSnapViewController.swift; sourceTree = "<group>"; };
 		19DDE9461B7B4A4000F4E6E2 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
 		2423063B128BDF3CAB99D784 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A7877BDB47E5BECFA09F969E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +103,17 @@
 			name = PureAutolayout;
 			sourceTree = "<group>";
 		};
+		1914405C1B82180F002160A2 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				1914405D1B821839002160A2 /* FirstSnapViewController.swift */,
+				1914405F1B8230A4002160A2 /* SecondSnapViewController.swift */,
+				19734CA51B836757003770A6 /* ThridSnapViewController.swift */,
+				19734CA71B8369FD003770A6 /* FourthSnapViewController.swift */,
+			);
+			name = SnapKit;
+			sourceTree = "<group>";
+		};
 		197065E31B7A4B2200F7E7C7 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +140,7 @@
 				197065F11B7A4B2200F7E7C7 /* AppDelegate.swift */,
 				197066151B7A4C8700F7E7C7 /* TableViewController.swift */,
 				190A93CB1B7CED6600AB6AC3 /* PureAutolayout */,
+				1914405C1B82180F002160A2 /* SnapKit */,
 				197065F51B7A4B2200F7E7C7 /* Main.storyboard */,
 				197065F81B7A4B2200F7E7C7 /* Images.xcassets */,
 				197065FA1B7A4B2200F7E7C7 /* LaunchScreen.xib */,
@@ -317,11 +337,15 @@
 			files = (
 				19576F491B7E438A0008676E /* FiveViewController.swift in Sources */,
 				19576F471B7E2DE50008676E /* FourthViewController.swift in Sources */,
+				19734CA81B8369FD003770A6 /* FourthSnapViewController.swift in Sources */,
 				190A93CA1B7CED6100AB6AC3 /* SecondViewController.swift in Sources */,
 				197065F21B7A4B2200F7E7C7 /* AppDelegate.swift in Sources */,
 				19576F451B7E292E0008676E /* ThirdViewController.swift in Sources */,
+				1914405E1B821839002160A2 /* FirstSnapViewController.swift in Sources */,
+				191440601B8230A4002160A2 /* SecondSnapViewController.swift in Sources */,
 				19576F4B1B7E469D0008676E /* SixViewController.swift in Sources */,
 				197066181B7A558300F7E7C7 /* FirstCenterViewController.swift in Sources */,
+				19734CA61B836757003770A6 /* ThridSnapViewController.swift in Sources */,
 				197066161B7A4C8700F7E7C7 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

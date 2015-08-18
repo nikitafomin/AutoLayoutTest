@@ -1,15 +1,15 @@
 //
-//  SixViewController.swift
+//  FirstSnapViewController.swift
 //  LayoutFrameworksTest
 //
-//  Created by Nikita Fomin on 14.08.15.
+//  Created by Nikita Fomin on 17.08.15.
 //  Copyright (c) 2015 Nikita Fomin. All rights reserved.
 //
 
 import UIKit
-import PureLayout
+import SnapKit
 
-class SixViewController: UIViewController {
+class FirstSnapViewController: UIViewController {
     
     let redView = UIView(frame: CGRectMake(10, 10, 20, 40))
     let greenView = UIView(frame: CGRectMake(10, 10, 20, 40))
@@ -30,25 +30,37 @@ class SixViewController: UIViewController {
         
         self.yellowView.backgroundColor = UIColor.yellowColor()
         self.view.addSubview(yellowView)
+        
+        self.view.backgroundColor = UIColor.whiteColor()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.redView.autoSetDimensionsToSize(CGSizeMake(100, 100))
-        
-        let leftConstraint = self.redView.autoPinEdgeToSuperviewEdge(ALEdge.Left, withInset: 20)
-        let rightConstraint = self.redView.autoPinEdgeToSuperviewEdge(ALEdge.Top, withInset: 20)
-        
-        let delayTime = dispatch_time(DISPATCH_TIME_NOW, Int64(1 * Double(NSEC_PER_SEC)))
-        dispatch_after(delayTime, dispatch_get_main_queue()) { () -> Void in
-            UIView.animateWithDuration(10, animations: { () -> Void in
-                leftConstraint.constant = 500
-                rightConstraint.constant = 500
-                self.view.layoutIfNeeded()
-            })
+        self.redView.snp_makeConstraints { (make) -> Void in
+            make.center.equalTo(self.view)
+            make.width.height.equalTo(20)
         }
         
+        self.greenView.snp_makeConstraints { (make) -> Void in
+            make.width.height.equalTo(20)
+            make.top.equalTo(self.redView.snp_bottom).offset(20)
+            make.left.equalTo(self.redView.snp_right)
+        }
+        
+        self.blueView.snp_makeConstraints { (make) -> Void in
+            make.height.equalTo(10)
+            make.left.equalTo(self.view).offset(30)
+            make.right.equalTo(self.view).offset(-30)
+            make.top.equalTo(self.greenView.snp_bottom)
+        }
+        
+        self.yellowView.snp_makeConstraints { (make) -> Void in
+            make.height.equalTo(20)
+            make.centerX.equalTo(self.view.snp_centerX)
+            make.width.equalTo(self.blueView.snp_width)
+            make.top.equalTo(self.blueView.snp_bottom).offset(20)
+        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -56,7 +68,7 @@ class SixViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

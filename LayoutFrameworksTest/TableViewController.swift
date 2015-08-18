@@ -42,7 +42,13 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        if section == 0 {
+            return 6
+        } else if section == 1 {
+            return 4
+        } else {
+            return 6
+        }
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -75,10 +81,6 @@ class TableViewController: UITableViewController {
                 cell.textLabel?.text = "thrid"
             case 3:
                 cell.textLabel?.text = "fourth"
-            case 4:
-                cell.textLabel?.text = "five"
-            case 5:
-                cell.textLabel?.text = "six"
             default:
                 break
             }
@@ -125,7 +127,20 @@ class TableViewController: UITableViewController {
             default:
                 break
             }
-        } else {
+        } else if indexPath.section == 1 {
+            switch indexPath.row {
+            case 0:
+                viewController = FirstSnapViewController()
+            case 1:
+                viewController = SecondSnapViewController()
+            case 2:
+                viewController = ThridSnapViewController()
+            case 3:
+                viewController = FourthSnapViewController()
+            default:
+                break
+            }
+        } else if indexPath.section == 2 {
             
         }
         
