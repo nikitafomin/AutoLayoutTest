@@ -23,6 +23,7 @@
 		197066181B7A558300F7E7C7 /* FirstCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197066171B7A558300F7E7C7 /* FirstCenterViewController.swift */; };
 		19734CA61B836757003770A6 /* ThridSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19734CA51B836757003770A6 /* ThridSnapViewController.swift */; };
 		19734CA81B8369FD003770A6 /* FourthSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19734CA71B8369FD003770A6 /* FourthSnapViewController.swift */; };
+		19ED63441BA6DCD6008F8F9E /* FirstAppleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED63431BA6DCD6008F8F9E /* FirstAppleViewController.swift */; };
 		8BB44ED0527BB169A39D8FAF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7877BDB47E5BECFA09F969E /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		19734CA51B836757003770A6 /* ThridSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThridSnapViewController.swift; sourceTree = "<group>"; };
 		19734CA71B8369FD003770A6 /* FourthSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthSnapViewController.swift; sourceTree = "<group>"; };
 		19DDE9461B7B4A4000F4E6E2 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		19ED63431BA6DCD6008F8F9E /* FirstAppleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstAppleViewController.swift; sourceTree = "<group>"; };
 		2423063B128BDF3CAB99D784 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A7877BDB47E5BECFA09F969E /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C11AE94641714172EECCB6C8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				197066151B7A4C8700F7E7C7 /* TableViewController.swift */,
 				190A93CB1B7CED6600AB6AC3 /* PureAutolayout */,
 				1914405C1B82180F002160A2 /* SnapKit */,
+				19ED63421BA6DC9A008F8F9E /* Apple Visual Style */,
 				197065F51B7A4B2200F7E7C7 /* Main.storyboard */,
 				197065F81B7A4B2200F7E7C7 /* Images.xcassets */,
 				197065FA1B7A4B2200F7E7C7 /* LaunchScreen.xib */,
@@ -173,6 +176,14 @@
 				197066061B7A4B2200F7E7C7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		19ED63421BA6DC9A008F8F9E /* Apple Visual Style */ = {
+			isa = PBXGroup;
+			children = (
+				19ED63431BA6DCD6008F8F9E /* FirstAppleViewController.swift */,
+			);
+			name = "Apple Visual Style";
 			sourceTree = "<group>";
 		};
 		743BC0C5E8346CD8D7ECE024 /* Pods */ = {
@@ -342,6 +353,7 @@
 				197065F21B7A4B2200F7E7C7 /* AppDelegate.swift in Sources */,
 				19576F451B7E292E0008676E /* ThirdViewController.swift in Sources */,
 				1914405E1B821839002160A2 /* FirstSnapViewController.swift in Sources */,
+				19ED63441BA6DCD6008F8F9E /* FirstAppleViewController.swift in Sources */,
 				191440601B8230A4002160A2 /* SecondSnapViewController.swift in Sources */,
 				19576F4B1B7E469D0008676E /* SixViewController.swift in Sources */,
 				197066181B7A558300F7E7C7 /* FirstCenterViewController.swift in Sources */,

@@ -28,9 +28,9 @@ class TableViewController: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 1 {
+        if section == 0 {
             return "SnapKit"
-        } else if section == 2 {
+        } else if section == 1 {
             return "PureLayout"
         } else {
             return "Apple"
@@ -47,7 +47,7 @@ class TableViewController: UITableViewController {
         } else if section == 1 {
             return 4
         } else {
-            return 6
+            return 1
         }
     }
 
@@ -141,7 +141,18 @@ class TableViewController: UITableViewController {
                 break
             }
         } else if indexPath.section == 2 {
-            
+            switch indexPath.row {
+            case 0:
+                viewController = FirstAppleViewController()
+            case 1:
+                viewController = SecondSnapViewController()
+            case 2:
+                viewController = ThridSnapViewController()
+            case 3:
+                viewController = FourthSnapViewController()
+            default:
+                break
+            }
         }
         
         if let controller = viewController {
